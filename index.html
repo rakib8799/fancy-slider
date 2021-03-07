@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fancy Slider</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+            integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Extra Part-1: Header Section -->
+            <header id="header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <h4 class="text-main">Image Slider</h4>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div
+                            class="collapse navbar-collapse justify-content-end"
+                            id="navbarNav"
+                        >
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div>
+                    <h4 class="mt-2 text-center">
+                        Search Image for create slider
+                    </h4>
+                    <div class="form-inline mt-3 d-flex justify-content-center">
+                        <div class="input-group col-md-6 mb-2 w-50">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="search"
+                                placeholder="nature"
+                            />
+                        </div>
+                        <button
+                            type="button"
+                            id="search-btn"
+                            class="btn btn-primary mb-2"
+                        >
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="images">
+                <div
+                    class="justify-content-around align-items-center mt-3 gallery-header mb-2"
+                >
+                    <h3 class="head-title text-center">
+                        Select image for create slider
+                    </h3>
+                    <div class="input-group mb-2 mb-md-0 ms-md-5 w-50">
+                        <input
+                            class="form-control"
+                            id="duration"
+                            placeholder="slider change duration"
+                        />
+                    </div>
+                    <button id="create-slider" class="btn btn-primary">
+                        Create slider
+                    </button>
+                </div>
+                <div class="row gallery"></div>
+            </section>
+
+            <!-- slider -->
+            <div class="main">
+                <section class="mt-5" id="sliders"></section>
+                <div
+                    class="dots d-flex mt-2 w-100 justify-content-center align-items-center bg-light"
+                >
+                    <span class="dot" onclick="changeItem(-1)"></span>
+                    <span class="dot" onclick="changeItem(1)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
