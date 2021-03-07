@@ -23,7 +23,7 @@ const showImages = images => {
     images.forEach(image => {
         /* 
         Extra Parts-2 & 3:
-            // Extra Part-2: Accordion will be appeared after each of the images.
+            // Extra Part-2: Accordion will be appeared after loading each of the images.
             // Extra Part-3: Modal will be opened after clicking on Accordion's 'click' button.
         */
         const {
